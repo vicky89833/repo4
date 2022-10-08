@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container" >
+        <h1>{{object.title}} Information hi</h1><hr>
+
+           <ul>
+             <li>Title: <strong>{{book.title}}</strong></li>
+             <li>Author: <strong>{{book.author}}</strong></li>
+             <li>Pages: <strong>{{book.pages}}</strong></li>
+             <li>Price: <strong>{{book.price}}</strong></li>
+           </ul>
+
+           <a class="btn btn-warning" href="/update/{{book.id}}">Update This Book Information</a>
+           <a class="btn btn-danger" href="/delete/{{book.id}}">Delete This hi Book</a>
+           <a class="btn btn-success" href="/list2">Book is added. Click to go to homepage</a>
+    </div>
+
+  </body>
+</html>
